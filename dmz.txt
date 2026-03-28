@@ -1,0 +1,29 @@
+What is DMZ ? Demilitarized Zone (It's like the borders that split between 2 countries)
+
+And this Concept is very famous in Network Security
+
+And we can say that the DMZ is the place that sits between our Private Network(Company Network,Home,Office) and the Internet (Public Network)
+
+Say any Company have a lot of Servers and Devices Such as web server , file Server,mail Server , Database Server 
+
+Any Server that any user can access from the internet we call them Public Server
+
+While Servers that  contains sensitive data for employees  are called Private Server
+
+And Say we have company X and has multiple servers (Public and private) and some intruders(hacker) wants to hack this company network say he can use Public Servers because he can access it as it's Public 
+
+So from there he may be able to access the private servers too and which is a problem 
+
+What's the solution? you can tell we can use the Firewall but firewall here is only 1 layer of security and not be able to operate as many layers because if the hacker can use a misconfiguration of the firewall or found a 0 day exploit then he can access our private servers so here comes the DMZ concept 
+
+So the company will put the public servers inside this DMZ but will split them from the internal network (Private Servers) so it will add these private servers after the firewall 
+
+Because if any hacker were able to pass the public servers they won't be redirected to the firwall behind the private servers because they are isolated
+
+And this concept is called Single Firewall DMZ because we have only 1 firewall behind Private Servers 
+
+But if we want the network to be more secure we will add a 2nd layer which is another Firewall behind the DMZ(Containing Public Servers) which makes the hack very hard and this is called Dual Firewall DMZ and in this concept usually there's 2 firewall from different vendors say first one from Palo Alto and Second from Fortinet
+
+The first Firewall will allow public access from internet and the second will block the public access
+
+

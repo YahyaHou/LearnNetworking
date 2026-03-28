@@ -1,0 +1,37 @@
+The Network Components Are 
+
+1) End Devices 
+
+Which are the Devices that are connected with each others such as Laptop, Pc,Printers,Mobile phone..
+
+2) Network Media
+
+These devices if they should be in a Network then they should happen a physical connection between them 
+
+The network media can be cables (wired)
+
+or Radio Frequencies  (wireless)
+
+1) Cables
+
+Copper and Fiber Optics 
+
+Copper Cables can be Coaxial and Twisted Pair
+
+2) Fiber Optics
+
+3) Network Interface (NIC)
+
+PC understands Binary 0 and 1 
+
+Then interface takes these 0 and 1 and transform it into phycial media the cable is able to understand because the cable cannot understant 0 and 1 it only understand electrical signal which the nic(Network Interface Card) can do so it can transform 0 and 1 to electrical signal and opposite
+
+If we are using fiber optics then this NIC will transform the bits (0 and 1) into Light signals
+
+and if they are wireless (wifi) it will transform into radio Frequencies
+
+4) Network Protocol
+
+It is set of specific rules the devices will agree on to be able to share data it's like the language they will communicate with
+
+And the most important protocol is the IP (Internet Protocol).

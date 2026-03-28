@@ -1,0 +1,33 @@
+1) What is a Network???
+
+A Network is a group of connected devices and can be done in 2 ways
+
+1) By using a Cable and this is called Wired Connection 
+
+2) Without using a Cable and this is called Wireless connection
+
+
+2) Why we use Network? 
+
+We use a network for 3 purposes 
+
+1) Shared Hardware
+
+Example : Say we have a company called X and has 4 employees and we don't have a network here so each of these employees has a pc to work on and they want to print some documents so they need printers to print these documents and if for example each printer cost 100$ so we need to pay 400$ for these 4 employees. So what if the employees are now 100? Then we will pay 10K For printers? so our total costs will be very high 
+
+And Say Company Y has also 4 employees and have 4 pc and these devices are inside a local network and if they need a printer then I don't need to bring a printer for all of them I can bring 1 printer and I connect this printer to the network and they can all use the same printer for printing and this is how we shared the hardware (printer) between these employees inside our network
+
+2) Shared Data
+
+Say 4 employees of Company Y are working on a project and each of them has a role in this project. If we don't have a network then if employee 1 needs to work after employee 2 he has to use external device and move the data to it. Then employee 2 has to plug and take these data and so on for emp 3 4 5 and maybe 10 which is a big problem and that would take a lot of time and we can't work at the same time and if the drive contains a malware then this malware will be spreaded across all devices
+
+But if these devices are connected to same network in that case any employee can share the data using a shared folder and they can work at the same time on that project.
+
+
+3) Data protection
+
+This can be done through backup which is taking a copy of important files so that if any problem happens I can revert back to these data.
+
+So if we don't have shared network then the backup process will be each day for each device and that will take a lot of time.
+
+

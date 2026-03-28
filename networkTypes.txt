@@ -1,0 +1,32 @@
+Network Types can be splitted in 2 types 
+
+1) Geographical Area
+
+🟣 PAN (Personal Area Network) it's a private Network and the smallest network ever existed and can cover up to 10 to 15m  and happens in houses when we connect devices such as phones and laptops together through bluetooth or wired connection using a usb for transferring music files and videos
+
+🟣 LAN (Local Area Network) it's a private network where we have multiple devices that are connected in the same building like an office,cafe,hospital and this is called Ethernet Lan because devices are connected through a Switch with cables
+
+🟡 WLAN (Wireless Local Area Network) it's also a private network but called Wireless means it doesn't uses cables to connect devices rather it depends on wirelss connection such as wifi signals like we see in houses through a Router
+
+🟡 CAN (Campus Area Network) it's a type of network that consists of 1 or more LAN in the same place or a Geographical area such as university where there's multiple sections for each major (Doctor,engineering,marketing) where each building has it's own LAN and all these LAN's Are connected to frame the CAN 
+
+🟢 MAN (Metropolitan Area Network) it's a type of network bigger than CAN And can grow up to a small city say we have a company that has different branches in the same city or geovernorate and this type of network is high speed and we use fiber optic to connect these networks
+
+🟢 SAN (Storage Area Network) it's a high speed network (such as storing or accessing data) and consists of disk arrays that contains a group of drives(HDD or SSD) and also group of servers that are connected through multiple Switches so we can say it's the network that is responsible for storing the data and retrieveing them
+
+🔴 WAN (Wide Area Network) it's the most bigger network because it connects regions and cities (like the internet) 
+
+2) Host Role 
+
+1)🔴 Peer To Peer (Workgroup)
+
+All devices in this type of network has the same permissions meaning there's no centralized device that configure and manage the network so all devices are responsible for their security, update,administration 
+
+And these devices can share any resource such as Printer and this type of network can handle up to 10 devices at most because if I Want to update my system you have to do that manually for all the devices
+
+
+2)🔵 Client / Server
+
+In this type there's a centralized device called a server that manages,configure this network and all the clients are served through it and it share resources like files,and databases so if any device wants to print a file it won't talk to the devices rather it will ask it from the server and the server will talk to the printer to print the file
+
+

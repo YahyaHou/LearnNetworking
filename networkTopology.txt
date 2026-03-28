@@ -1,0 +1,100 @@
+What is a Network Topology??
+
+By Definition : Network Topology is the structural layout of a network. It describes how different nodes (like computers, printers, and servers) are connected and how data flows between them.
+So When computers or devices are connected together to share data, the arrangement of these connections is called a Network Topology. It’s like a roadmap of how devices talk to each other.
+
+What are the Common types of a Network Topology ??
+
+The 4 common types are: Star, Ring, Mesh, and Bus
+
+🟣 Star Topology
+Every device like computer, printer, server connects to a central device (usually a Switch or Router). If one device fails, the rest of the network still works. It is mostly used in modern offices, schools, and homes.
+
+🌟 Example:- At home wi-fi router connects all laptops, mobiles and TVs to it.
+
+➡️ Advantages:- Easy to manage and expand.
+
+▪️One device failure doesn’t break the network.
+
+➡️ Disadvantage:- If the central switch/router fails, the entire network stops.
+
+
+🟣 Ring Topology
+
+Each device is connected to two other devices, forming a circle (ring).Data moves in one direction (or both, in dual-ring).Rarely used now-a-days, but some industrial systems still rely on it.
+
+➡️ Advantages:- Simple data flow (each packet passes device by device).
+
+➡️ Disadvantages:- If one device fails, the whole network can break unless redundancy is added.
+
+▪️Slower compared to modern star networks.
+
+🟣 Mesh Topology 
+Every device is connected to multiple other devices. It can be full mesh (all devices interconnected) or partial mesh (some interconnections)
+
+➡️ Advantages:- It is very reliable. If one path fails, data takes another route.
+
+▪️ It has high performance.
+
+➡️ Disadvantages:- It is expensive, needs more cables or devices.
+ It is complex to maintain.
+
+🟣 Bus Topology
+
+All devices connect to a single cable (the bus). Data travels along the cable, and devices pick up messages meant for them. It is used in early Ethernet (10Base2, 10Base5) and old coaxial LANs. You’ll still find it in small, simple networks or in teaching labs.
+
+➡️ Advantage :- It is cheap and easy to set up.
+
+➡️ Disadvantages:- If the main cable fails, the entire network fails.
+
+▪️ Lots of data collisions if many devices send data at once.
+
+We have also 2 more toplogies used :
+
+🟣 Tree (Hierarchical) Topology
+
+In a tree topology, there is only one connection between any two connected nodes. The network resembles an inverted tree:
+
+The Root: The top-level node (usually a powerful server or a main switch).
+
+The Branches: Intermediate levels of switches or hubs.
+
+The Leaves: Individual peripherals or workstations at the end of the chain.
+
+➡️ Advantages
+
+-Highly scalable
+-Centralized Management
+-Isolation of Faults
+
+➡️ Disadvantages
+
+-Upper-layer failures affect lower layers
+-Cabling Complexity
+-Requires good design
+
+Usage
+
+✅ Enterprise networks
+
+Campus networks
+
+
+🟣 Hybrid Topology
+
+This is a combination of two or more different topologies (e.g., a Star-Bus network). Most large-scale corporate networks are hybrids.
+
+➡️ Advantages
+
+-Flexible
+-Optimized for real business needs
+-Scalable and resilient
+
+➡️ Disadvantages
+
+-Design complexity
+-Higher cost
+
+Usage
+
+✅ Real-world enterprise environments
