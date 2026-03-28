@@ -15,11 +15,11 @@ A comprehensive, open-source knowledge base covering the fundamentals of network
 
 ## 🚀 Installation
 
-git clone <repo>
+git clone repo
 
-cd <projectrepo>
+cd projectrepo
 
-open the project and start <learning>
+open the project and start learning
 
 ## 🤝 How to contribute
 
