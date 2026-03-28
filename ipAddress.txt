@@ -1,0 +1,367 @@
+1. What Is an IP Address?
+
+An IP Address (Internet Protocol Address) is a unique numerical identifier assigned to a device on a network.
+
+It serves two critical purposes:
+
+🟣 Device Identification – Identifies who the device is on the network
+
+🟡 Location Addressing – Identifies where the device is so data can reach it
+
+Without an IP address, network communication is impossible.
+
+In technical terms:
+
+An IP address is a Layer 3 (Network Layer) logical address used by the Internet Protocol to route packets between devices.
+
+2. Why IP Addresses Are Required (Practical View)
+
+In IT Support, IP addresses are required to:
+
+🔴 Allow computers to communicate within a LAN
+
+🔴 Access the internet
+
+🔴 Connect to servers, printers, cameras, and network devices
+
+🔴 Enable troubleshooting (ping, traceroute, remote access)
+
+🔴 Apply security rules and access controls
+
+If an IP address is:
+
+Missing → No connectivity
+
+Incorrect → Partial or no access
+
+Duplicated → Network conflicts
+
+
+3. Types of IP Addresses
+
+A. IPv4 (Internet Protocol Version 4)
+
+Most commonly used in enterprise environments
+
+Format:
+
+x.x.x.x
+
+Each x is called an octet (0–255)
+
+Example:
+
+192.168.1.10
+
+32-bit address
+
+~4.3 billion possible addresses => 2^32
+
+Human-readable
+
+Still dominant despite address exhaustion
+
+B. IPv6 (Internet Protocol Version 6)
+
+Created to solve IPv4 exhaustion.
+
+Format:
+
+2001:0db8:85a3:0000:0000:8a2e:0370:7334
+
+128-bit address
+
+🔴 Virtually unlimited addresses
+
+🔴 Uses hexadecimal
+
+🔴 Mandatory for modern operating systems
+
+🔴 More complex but more efficient
+
+In Networking, IPv4 is still the primary focus, but IPv6 awareness is mandatory.
+
+4. Public vs Private IP Addresses
+
+A. Public IP Address
+
+🔴 Assigned by an ISP
+
+🔴 Used on the internet
+
+🔴 Must be globally unique
+
+🔴 Identifies your network to the outside world
+
+Example:
+
+102.45.87.210
+
+Used for:
+
+🔴 Websites
+
+🔴 VPN endpoints
+
+🔴 Remote access servers
+
+B. Private IP Address
+
+Used inside internal networks.
+
+Defined ranges (IPv4):
+
+Class	                   Range
+Class A	        10.0.0.0 – 10.255.255.255
+Class B	        172.16.0.0 – 172.31.255.255
+Class C	        192.168.0.0 – 192.168.255.255
+
+Example:
+
+192.168.1.100
+
+Private IPs:
+
+🔴 Cannot be routed on the internet
+
+🔴 Require NAT (Network Address Translation)
+
+
+5. Static vs Dynamic IP Address
+
+A. Dynamic IP Address (DHCP)
+
+🔴 Assigned automatically by a DHCP server.
+
+Advantages:
+
+🟢 No manual configuration
+
+🟢 Reduces errors
+
+🟢 Scales easily
+
+Used for:
+
+🟢 User PCs
+
+🟢 Laptops
+
+🟢 Mobile devices
+
+In Networking, 90% of endpoints use DHCP.
+
+B. Static IP Address
+
+🟢 Manually assigned.
+
+Advantages:
+
+🟢 Fixed and predictable
+
+🟢 Required for servers and network devices
+
+Used for:
+
+🟢 Servers
+
+🟢 Routers
+
+🟢 Printers
+
+🟢 Network switches
+
+🟢 Firewalls
+
+🟢 isconfigured static IPs are a common cause of outages.
+
+
+6. IP Address Components
+
+An IPv4 address is divided into:
+
+A. Network Portion
+
+Identifies the network
+
+B. Host Portion
+
+Identifies the device within that network
+
+This division is defined by the Subnet Mask.
+
+7. Subnet Mask 
+
+The subnet mask determines:
+
+How many devices a network can support
+
+Which part of the IP is network vs host
+
+Example:
+
+IP Address:     192.168.1.10
+Subnet Mask:    255.255.255.0
+
+This means:
+
+Network: 192.168.1.0
+
+Usable Hosts: 192.168.1.1 – 192.168.1.254
+
+Broadcast: 192.168.1.255
+
+Common masks:
+
+/24 → 255.255.255.0
+
+/16 → 255.255.0.0
+
+/8 → 255.0.0.0
+
+Incorrect subnet masks cause:
+
+🟡 “Limited connectivity”
+
+🟡 Inability to reach local devices
+
+🟡 Internet access failures
+
+8. Default Gateway
+
+The Default Gateway is the router IP that connects a local network to other networks.
+
+Example:
+
+IP Address:     192.168.1.10
+Subnet :        255.255.255.0
+Gateway:        192.168.1.1
+
+If the gateway is:
+
+Missing → No internet
+
+Incorrect → Local only access
+
+This is one of the first things checked in troubleshooting.
+
+9. DNS and Its Relation to IP Addresses
+
+DNS converts:
+
+www.google.com → 142.250.190.14
+
+Without DNS:
+
+🔵 IP connectivity may work
+
+🔵 Websites will not load by name
+
+Common DNS servers:
+
+ISP DNS
+
+Google: 8.8.8.8
+
+Cloudflare: 1.1.1.1
+
+DNS misconfiguration is a top 3 IT support issue.
+
+10. Common IP Address Problems
+
+🔵 IP Conflict
+
+🔵 Two devices share the same IP
+
+🔵 Causes intermittent connectivity
+
+🔵 Resolved by DHCP renewal
+
+🔵 APIPA Address
+
+169.254.x.x
+
+Means:
+
+DHCP failure
+
+No network connectivity
+
+🔵 Wrong Subnet
+
+Device cannot communicate with peers
+
+🔵 Wrong Gateway
+
+Internet inaccessible
+
+🔵 DNS Failure
+
+Websites unreachable by name
+
+🔵 Troubleshooting IP Issues 
+
+Typical steps:
+
+Check IP configuration (ipconfig / ifconfig)
+
+Verify DHCP assignment
+
+Ping local IP
+
+Ping gateway
+
+Ping public IP
+
+Test DNS resolution
+
+Renew IP address
+
+Check conflicts
+
+These steps isolate Layer 1–3 issues efficiently.
+
+🔵 IP Addressing in Enterprise Environments
+
+IP plans are documented
+
+Subnets are segmented (VLANs)
+
+Servers use static IPs
+
+Endpoints use DHCP
+
+Firewalls control IP traffic
+
+Monitoring tools track IP usage
+
+Improper IP design leads to:
+
+Network congestion
+
+Security issues
+
+Scalability problems
+
+🔵 Summary 
+
+An IP address is:
+
+🔵 A core networking component
+
+🔵 Essential for all communication
+
+🔵 A common source of incidents
+
+🔵 A foundational skill for IT professionals
+
+Understanding IP addressing is mandatory for:
+
+🔵 Troubleshooting
+
+🔵 Network design
+
+🔵 Security
+
+🔵 System administration
+

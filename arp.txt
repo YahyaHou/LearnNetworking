@@ -1,0 +1,136 @@
+What Is ARP???
+
+ARP (Address Resolution Protocol) is a protocol used to find the MAC address of a device when you only know its IP address.
+
+In simple words:
+
+ARP translates IP addresses into MAC addresses.
+
+
+Why ARP Exists??
+
+Computers think in IP addresses (Layer 3)
+
+Switches work using MAC addresses (Layer 2)
+
+📌 Problem:
+
+“I know the IP address of the device I want to talk to…
+but I need its MAC address to actually send data.”
+
+And here comes ARP to solve this problem.
+
+Where ARP Is Used???
+
+ARP is used:
+
+Inside a local network (LAN)
+
+When one device wants to talk to another device in the same subnet
+
+ARP is NOT used across the internet — only locally.
+
+Let's Take an Example
+
+Scenario:
+
+Device 1 wants to send data to Device 4
+
+Device 1 knows:
+
+IP4 ❌ (Yes)
+
+MAC4 ❓ (No)
+
+Step-by-Step: How ARP Works
+
+🟡 Step 1: Check ARP Cache
+
+Device 1 checks its ARP table (cache):
+
+“Do I already know MAC4 for IP4?”
+
+If YES → skip ARP
+If NO → ARP is triggered
+
+🟡 Step 2: ARP Request (Broadcast)
+
+Device 1 sends an ARP Request:
+
+“Who has IP4? Tell me your MAC.”
+
+Sent as a broadcast
+
+Destination MAC = FF:FF:FF:FF:FF:FF
+
+Switch floods it to all ports
+
+🟡 Step 3: Only Device 4 Responds
+
+Device 4 sees:
+
+“That IP is mine”
+
+It sends an ARP Reply:
+
+“IP4 is at MAC4”
+
+Sent as a unicast (directly to Device 1)
+
+🟡 Step 4: ARP Table Is Updated
+
+Device 1 stores:
+
+IP4 → MAC4
+
+
+Now Device 1 can send data normally.
+
+What ARP Is not??
+
+❌ ARP does not route traffic
+❌ ARP does not work across subnets
+❌ ARP does not replace switches or routers
+
+What is ARP Cache??
+
+Each device keeps an ARP cache:
+
+Stores IP → MAC mappings
+
+Entries expire after some time (aging)
+
+Why?
+
+Becuase network changes and more devices move or disconnect
+
+What are the Benefits of ARP???
+
+✅ Makes IP communication possible
+✅ Automatic (no manual MAC mapping)
+✅ Fast after initial resolution
+✅ Essential for Ethernet networks
+
+Does ARP have problems??
+
+Yes arp protocol have some problems hackers can use such as : ARP Spoofing / ARP Poisoning
+
+🟡 Attacker sends fake ARP replies
+
+🟡 Redirects traffic to themselves
+
+🟡 Used in Man-in-the-Middle attacks
+
+And what is the solution for these problems??
+
+You can use below:
+
+🟡 Dynamic ARP Inspection
+
+🟡 Static ARP entries
+
+🟡 Secure switches
+
+One-Line Ultimate Summary
+
+👉 ARP allows devices to find MAC addresses using IP addresses so data can actually be delivered on a local network.

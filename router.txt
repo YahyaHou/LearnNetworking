@@ -1,0 +1,183 @@
+🌐 What are Routers?? 
+
+A router is a network device that connects different networks together and decides where data should go next.
+
+If:
+
+Switch = traffic controller inside a city
+
+Router = GPS system between cities
+
+What a Router Does??
+
+A router:
+
+🟣 Connects different networks (subnets)
+
+🟣 Forwards data based on IP addresses
+
+🟡 Chooses the best path for data
+
+🟡 Acts as the gateway to the Internet
+
+
+Example of a Simple Real-Life how routers Works: 
+
+Imagine sending a package:
+
+House address → street → city → country
+
+📦 Routers read the “city and country” (IP network), not the house number (MAC).
+
+OSI Layer
+
+Layer 3 (Network Layer)
+
+🔹 How a Router Works (Step-by-Step)
+
+Scenario:
+
+Device 1 (192.168.1.10) wants to reach Google (8.8.8.8)
+
+🟡 Step 1: Check Destination Network
+
+Device 1 asks:
+
+“Is this IP in my local network?”
+
+Answer: ❌ NO
+
+🟡 Step 2: Send to Default Gateway
+
+Device 1:
+
+ARPs for router’s MAC address
+
+Sends frame to the router
+
+🟡 Step 3: Router Decapsulates the Frame
+
+Router:
+
+Removes Layer 2 header
+
+Reads destination IP address
+
+🟡 Step 4: Routing Table Lookup
+
+Router checks its routing table:
+
+Finds the best matching route
+
+Chooses next hop
+
+🟡 Step 5: Forward to Next Network
+
+Router:
+
+Rebuilds Layer 2 frame
+
+Uses ARP (if needed)
+
+Forwards packet
+
+This repeats until destination is reached.
+
+What is a Routing Table??
+
+Routing Table is basically the Heart of a Router ❤️.
+
+A routing table contains:
+
+🔴 Destination network
+
+🔴 Subnet mask
+
+🔴 Next hop
+
+🔴 Interface
+
+🔴 Metric (cost)
+
+Example:
+
+0.0.0.0/0 → ISP Gateway
+
+192.168.1.0/24 → LAN
+
+🔹 Types of Routes
+
+🔴 Directly Connected
+
+Automatically added
+
+🔴 Static Routes
+
+Manually configured
+
+Simple & predictable
+
+🔴 Dynamic Routes
+
+Learned via protocols:
+
+🟢 RIP
+🟢 OSPF
+🟢 EIGRP
+🟢 BGP
+
+🔹 Router vs Switch
+Feature 	        Switch	    Router
+Works on	        MAC	        IP
+OSI Layer	        2	        3
+Connects	        Devices	    Networks
+Broadcasts	        Forwarded	Blocked
+Internet Access	    ❌	       ✅
+
+🔹 Why Routers Are Needed
+
+Without routers:
+
+❌ No internet
+❌ No inter-network communication
+❌ Broadcast storms everywhere
+
+Routers:
+✅ Control traffic
+✅ Separate broadcast domains
+✅ Provide security
+
+
+🔹 Broadcast Domains
+
+Switch → one broadcast domain
+
+Router → separates broadcast domains
+
+What are the types of Routers??
+
+1️⃣ Home Router
+
+Wi-Fi + Switch + Router combined
+
+2️⃣ Enterprise Router
+
+High performance
+
+Used in companies
+
+3️⃣ Core Router
+
+Used by ISPs
+
+Handles massive traffic
+
+🔹 What Routers Do NOT Do
+
+❌ Do not forward broadcasts (by default)
+❌ Do not care about MAC beyond local link
+
+🔹 One-Line Ultimate Summary
+
+👉 A router connects different networks and intelligently forwards data using IP addresses, enabling the Internet and large-scale networking.
+

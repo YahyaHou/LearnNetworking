@@ -1,0 +1,197 @@
+What are Switches??
+
+🌐 Switches are basically the Smart traffic controllers of a Network
+
+A switch is one of the most important and widely used network devices today. It connects multiple devices and intelligently decides where data should go.
+
+If a hub shouts, and a bridge opens doors, a switch directs traffic like a smart traffic police officer 🚦.
+
+What a Switch Does??
+
+A switch:
+
+🟡 Connects devices in a LAN
+
+🟡 Sends data only to the intended device
+
+🟡 Makes networks fast, secure, and efficient
+
+A Very Simple Example
+
+Imagine a post office 📮:
+
+Each letter has an address
+
+The post office sends letters only to the correct house
+
+A switch works like that post office.
+
+How a Switch Works??? 
+
+🟡 Device sends data with a MAC address
+
+🔴 Switch reads the MAC address
+
+🔴 Switch checks its MAC address table
+
+🔴 If known → sends data to correct port
+
+🟢 If unknown → sends to all ports (once)
+
+🟢 Learns the address for next time
+
+
+OSI Layer
+
+Layer 2 (Data Link Layer)
+
+Some advanced switches work at Layer 3
+
+What are the key features of a Switch??
+
+1. MAC Address Learning
+
+🟢 Automatically learns connected devices
+
+🟢 Builds a table for fast forwarding
+
+2. Multiple Collision Domains
+
+🔴 Each port is its own collision domain
+
+🔴 No data collisions 🎯
+
+3. Full-Duplex Communication
+
+🔴 Can send and receive data at the same time
+
+🔴 Much faster than hubs
+
+4. High Speed
+
+🟣 Supports Fast Ethernet, Gigabit, and beyond
+
+🟣 Ideal for modern networks
+
+
+What are the types of Switches??
+
+1. Unmanaged Switch
+
+🟣 Plug and play
+
+🟣 No configuration
+
+🟣 Used in homes & small offices
+
+2. Managed Switch
+
+🟣 Fully configurable
+
+🟣 Used in enterprises
+
+Supports:
+
+-VLANs
+
+-Security
+
+-Traffic control
+
+3. Layer 3 Switch
+
+🟣 Combines switch + router functions
+
+🟣 Routes data between VLANs
+
+🟣 Faster than routers inside LANs
+
+4. PoE Switch (Power over Ethernet)
+
+Sends power + data in one cable
+
+Used for:
+
+🟣 IP cameras 📷
+
+🟣 VoIP phones ☎️
+
+🟣 Wireless access points
+
+Important Switch Concepts 
+
+🔹 VLAN (Virtual LAN)
+
+-Logically separates networks
+
+-Improves security
+
+-Reduces broadcast traffic
+
+🔹 STP (Spanning Tree Protocol)
+
+-Prevents network loops
+
+-Automatically disables extra paths
+
+🔹 Port Security
+
+-Limits which devices can connect
+
+-Protects from unauthorized access
+
+🔹 QoS (Quality of Service)
+
+-Prioritizes important traffic
+
+Example: video calls over downloads
+
+Switch vs Hub vs Bridge (Quick View)
+
+Feature	        Hub	        Bridge	        Switch
+Intelligence	None	    Low	            High
+OSI Layer	    1	        2	            2/3
+Speed	        Slow	    Medium	        Fast
+Collisions	    Many	    Few	            None
+Security	    None	    Basic	        High
+
+Advantages of Switches
+
+✅ Very fast
+✅ Secure
+✅ Scalable
+✅ Efficient traffic handling
+✅ Essential for modern networking
+
+Disadvantages
+
+❌ More expensive than hubs
+❌ Requires knowledge (managed switches)
+
+Are Switches Used Today??? 
+
+Answer is : Yes
+
+Where?
+
+🟣 Homes
+
+🟣 Offices
+
+🟣 Data centers
+
+🟣 Cloud infrastructure
+
+One-Line Summary
+
+👉 A switch is a smart network device that connects devices and sends data only where it belongs, making networks fast, secure, and efficient.
+
+👉 A switch builds its MAC table dynamically by learning source MAC addresses and uses it to forward future frames only to the correct port.
+
+What is basically Switching Table??
+
+Switching table or Mac Address Table which is a table stored in a network switch's memory that maps individual device hardware addresses (MAC addresses) to specific physical ports(Interfaces) on the switch.
+
+What differs Switching Tables from Routing Tables??
+
+While a switching table operates at Layer 2 (Data Link) and uses MAC addresses to switch data within a local network, a routing table operates at Layer 3 (Network) and uses IP addresses to forward data between different networks.

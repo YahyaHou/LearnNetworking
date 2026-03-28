@@ -1,0 +1,41 @@
+Any hacker that wants to get into your network always look for a port that can access your network through it
+
+Say on our device we want to access youtube we will enter the browser then type youtube.com the dns will lookup for that ip in it's table then when locate it will know the youtube server and then youtube server know that we want to browse it so we will use the port 80 http the protocol that is used to browse html and web pages and then return back a response to our device and then we can see the youtube content 
+
+All this process happens without seeing it so how to check this and see the ip of youtube with the port 
+
+cmd> netstat -n and you will see 
+
+protocol             Local Address                  Foregin Address(youtube)         State
+    
+TCP        our ip: port used and open ie 52913        206.22.35.12:80(port)         Established
+
+Here the port 52913 is the port our device chose for this session with youtube
+
+So we can say that the port number will decide what service I need or any application I will work on and based on that he will redirect me inside the server
+
+Port number range -> 0 -> 65535 (Assigned by IANA)
+
+And IANA has categorized these ports into 3 categories 
+
+Port Number                     Category 
+0 -> 1023                      System Ports (Well known Ports) ie :80 , 21, 25 ,443
+1024 -> 49151                  User ports or Registered Ports (Ports that companies register for specific service such as Oracle,SQL,Docker)
+49152 -> 65535                 Dynamic or Private Ports (Port for our devices to use them)
+
+So we can say first 2 ranges are for Servers
+
+While the last range is for clients (our devices for example)
+
+Sometimes we see that our devices use well know ports number such as 80
+
+Example : netstat -n 
+
+and you see our device ip with : 21 or  :80 and we say that these port numbers found on servers only and not clients and this happens when our clients act as a server for a specific role such as providing a service like downloading files from it.
+
+As we say before the hackers can hack you through port numbers by doing port scanning (checking what are the ports open and not encrypted that are running on a server or device)
+
+So they will target the services that works on these ports and use the exploits in these services
+
+That's why we put a firewall before any server or devices and we specify which ports to work on.
+
